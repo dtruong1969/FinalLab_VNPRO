@@ -3,7 +3,7 @@
   hosts: R1
   gather_facts: no
 
-  tasks: 
+  task: 
   - name: dat ip e0/1 va e0/2
     ios_l3_interfaces:
       config:
@@ -13,7 +13,7 @@
       - name: ethernet e0/2
         ipv4:
         - address: 192.168.12.1/24
-  tasks:
+  task:
   - name: make interfaces up
     ios_l3_interfaces:
       config:
@@ -27,7 +27,7 @@
   hosts: R2
   gather_facts: no
 
-  tasks: 
+  task: 
   - name: dat ip e0/1 va e0/2
     ios_l3_interfaces:
       config:
@@ -38,7 +38,7 @@
         ipv4:
         - address: 192.168.12.2/24
         
-  tasks:
+  task:
   - name: make interfaces up
     ios_l3_interfaces:
       config:
