@@ -13,15 +13,7 @@
       - name: ethernet e0/2
         ipv4:
         - address: 192.168.12.1/24
-  - name: make interfaces up
-    ios_l3_interfaces:
-      config:
-      - name: ethernet e0/1 
-        enabled: true
-      config:
-      - name: ethernet e0/2 
-        enabled: true
-
+        
 - name: IP Config
   hosts: R2
   gather_facts: no
@@ -37,12 +29,4 @@
         ipv4:
         - address: 192.168.12.2/24
         
-  - name: make interfaces up
-    ios_l3_interfaces:
-      config:
-      - name: ethernet e0/1 
-        enabled: true
-      config:
-      - name: ethernet e0/2 
-        enabled: true
         
