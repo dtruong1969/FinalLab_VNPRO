@@ -13,8 +13,8 @@
       - name: ethernet e0/2
         ipv4:
         - address: 192.168.12.1/24
-   - name: make interfaces up
-     ios_l3_interfaces:
+  - name: make interfaces up
+    ios_l3_interfaces:
       config:
       - name: ethernet e0/1 
         enabled: true
