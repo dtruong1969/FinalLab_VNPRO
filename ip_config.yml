@@ -27,7 +27,7 @@
   hosts: R2
   gather_facts: no
 
-  task: 
+  tasks: 
   - name: dat ip e0/1 va e0/2
     ios_l3_interfaces:
       config:
